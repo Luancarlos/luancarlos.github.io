@@ -20,14 +20,24 @@ $(function() {
       $this = $("#sendMessageButton");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
       $.ajax({
-        url: "././mail/contact_me.php",
+        url: "https://mandrillapp.com/api/1.0/messages/send.json ",
         type: "POST",
         data: {
-          name: name,
-          phone: phone,
-          email: email,
-          message: message
-        },
+          key: "841afe00a0c7c1e8ce165990a0588f2d-us17",
+          message: {
+            from_email: "luanbam@hotmail.com",
+            to: [
+                {
+                  email: email,
+                  name: name,
+                  type: to
+                },
+            
+              ],
+            autotext: true,
+            subject: "Contato",
+            html: "<p>TELEFONE: "+phone+"<p>"+message
+          },
         cache: false,
         success: function() {
           // Success message
