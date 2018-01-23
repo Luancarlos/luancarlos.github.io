@@ -30,14 +30,15 @@ $(function() {
                 {
                   email: email,
                   name: name,
-                  type: to
+                  type: "to"
                 },
             
               ],
             autotext: true,
             subject: "Contato",
-            html: "<p>TELEFONE: "+phone+"<p>"+message
+            html: "<p>TELEFONE: "+phone+"<p>"+message,
           },
+        },
         cache: false,
         success: function() {
           // Success message
