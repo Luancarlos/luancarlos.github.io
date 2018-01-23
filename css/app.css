@@ -1,0 +1,33 @@
+#perfil{
+	border-radius: 50%;
+}
+#cabecalho{
+	background-image: url('../img/fundo.jpeg');
+    background-size: cover;
+    background-position-y: 37px;
+}
+#cont{
+	    background: #2524246e;
+    padding: 30px;
+}
+.button {
+  background: linear-gradient(to right, #e64a19,#ffa304,#e64a19);
+  border-radius: 8px;
+  color: #122dff;
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px;
+  text-decoration: none;
+}
+.button span {
+  background: #fff;
+  display: block;
+  padding: 1em 3em;
+  border-radius: 6px;
+}
+
+
+.container {
+  text-align: center;
+  margin-top: 30px;
+}
